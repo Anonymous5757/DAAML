@@ -15,11 +15,11 @@ int dp[100][100];
     dp[0][i]=0;
 
     
-    int n;
-    int W;
+    int n=5;
+    int W=7;
 
-    int wt[n];
-    int val[n];
+    int wt[]={1,2,3,4,5};
+    int val[]={10,20,30,40,50};
 
 for(int i=1;i<=n;i++)
     {
@@ -36,12 +36,15 @@ for(int i=1;i<=n;i++)
     }
 
     for(int i=0;i<=n;i++)
+    {
+        cout<<endl;
     for(int j=0;j<=W;j++)
         cout<<dp[i][j];
+    }
 
 
 
 
 
-    cout<<dp[n][W];
+    cout<<"\n"<<dp[n][W];
 }
